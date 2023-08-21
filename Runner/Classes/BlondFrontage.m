@@ -48,10 +48,6 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 
 @implementation BlondFrontage
 
-- (void)dealloc {
-    [self.sincNavigatePart removeTimeObserver:self.nsfCertainMono];
-}
-
 - (instancetype)init {
     self = [super init];
     if ( self ) {

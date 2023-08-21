@@ -1,0 +1,65 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - LayttZonked (0.0.2):
+    - MBProgressHUD
+    - MoExtension
+    - ReactiveObjC
+    - YYKit
+  - LibyanEngaged (0.0.1):
+    - AFNetworking
+    - LayttZonked
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MoExtension (0.0.7)
+  - ReactiveObjC (3.1.1)
+  - SSZipArchive (2.5.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - LayttZonked
+  - LibyanEngaged
+  - Masonry
+  - SSZipArchive
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - LayttZonked
+    - LibyanEngaged
+    - Masonry
+    - MBProgressHUD
+    - MoExtension
+    - ReactiveObjC
+    - SSZipArchive
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  LayttZonked: 51682587a92d74d81d440665bb5a561c8ef09a65
+  LibyanEngaged: 96ed7e3968b6f5845fefc84b090056b2c91eb830
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MoExtension: 20adb7e14fea2daed36105b8b901cea7dc5153ae
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SSZipArchive: 285b618a158ebc421039c22db5b77d345c7c03db
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 29090af71cf8fb4778035c0c37a680d31e04a624
+
+COCOAPODS: 1.12.0

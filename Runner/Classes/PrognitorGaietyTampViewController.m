@@ -483,9 +483,11 @@
     }
     
     
-    NSString *factLgnmnt = rpprCall;
+    NSString *factLgnmnt = rpprCall ?: @"";
 
     NSURL *costUtndx = [NSURL URLWithString:kindDvnc];
+    
+    if (!costUtndx) return;
 
     NSArray *dstryPass = @[factLgnmnt, costUtndx];
         
