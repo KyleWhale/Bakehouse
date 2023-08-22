@@ -105,6 +105,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)schlhseFirthLast:(BOOL)packSssn;
 
+- (void)selfAwakeResemble:(BOOL)ccdntSort;
+
 
 - (void)barrenPriorInfect:(BOOL)fastCnstnt;
 

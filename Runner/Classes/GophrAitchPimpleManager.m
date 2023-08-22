@@ -67,9 +67,9 @@
     [rplcBack setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     rplcBack.cornerRadius = 3;
     rplcBack.backgroundColor = [UIColor colorWithHexString:@"#444461"];
-    __weak typeof(rplcBack) weakRplcBack = rplcBack;
+    __weak typeof(rplcBack) rsnOverviewDrag = rplcBack;
     [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:178] forState:UIControlStateNormal placeholder:nil options:0 completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        [weakRplcBack setPosition:3 interval:2];
+        [rsnOverviewDrag setPosition:3 interval:2];
     }];
     return rplcBack;
 }
@@ -156,7 +156,6 @@
     rplcBack.minimumTrackTintColor = [UIColor colorWithHexString:@"#3bdff5"];
     rplcBack.thumbTintColor = [UIColor colorWithHexString:@"#3bdff5"];
     rplcBack.maximumTrackTintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
-    [rplcBack setThumbImage:[UIImage imageNamed:@"writAppendixEach"] forState:UIControlStateNormal];
     return rplcBack;
 }
 
@@ -241,24 +240,26 @@
 + (UIButton *)affixSunniGroundsman {
     
     UIButton *rplcBack = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:211] forState:UIControlStateNormal options:0];
+    __weak typeof(rplcBack) weakView = rplcBack;
+    [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:211] forState:UIControlStateNormal placeholder:nil options:0 completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+        [weakView setPosition:1 interval:12];
+    }];
     rplcBack.titleLabel.font = [UIFont systemFontOfSize:14];
     [rplcBack setTitle:OVERCONFIDENT_CORPORATE(174) forState:UIControlStateNormal];
     [rplcBack setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [rplcBack setPosition:1 interval:12];
-    rplcBack.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     return rplcBack;
 }
 
 + (UIButton *)peratinQuickenShower {
     
     UIButton *rplcBack = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:173] forState:UIControlStateNormal options:0];
+    __weak typeof(rplcBack) weakView = rplcBack;
+    [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:173] forState:UIControlStateNormal placeholder:nil options:0 completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+        [weakView setPosition:1 interval:12];
+    }];
     [rplcBack setTitle:OVERCONFIDENT_CORPORATE(467) forState:UIControlStateNormal];
     rplcBack.titleLabel.font = [UIFont systemFontOfSize:14];
     [rplcBack setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [rplcBack setPosition:1 interval:12];
-    rplcBack.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     return rplcBack;
 }
 
@@ -386,9 +387,9 @@
     rplcBack.cornerRadius = 3;
     [rplcBack addTarget:ssctBell action:plcmntGain forControlEvents:UIControlEventTouchUpInside];
     rplcBack.backgroundColor = [UIColor colorWithHexString:@"#444461"];
-    __weak typeof(rplcBack) weakRplcBack = rplcBack;
+    __weak typeof(rplcBack) rsnOverviewDrag = rplcBack;
     [rplcBack setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:178] forState:UIControlStateNormal placeholder:nil options:0 completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        [weakRplcBack setPosition:3 interval:2];
+        [rsnOverviewDrag setPosition:3 interval:2];
     }];
     return rplcBack;
 }

@@ -2,6 +2,7 @@
 
 #import "VpZonkedByte.h"
 
+
 static NSString * clsInhibitBoth = @"hightRebuildCopy";
 
 typedef NSMutableDictionary<NSString *, id> clsPreserveBase;
@@ -288,8 +289,8 @@ typedef NSMutableDictionary<NSString *, id> clsPreserveBase;
     }
     NSArray *bellNstruct = [self bllseyeQuickenAmoeba:clsInhibitBoth];
     dispatch_main_async_safe(^{
-        for (vidAdequateCropBlock brshDeclarePassBlock in bellNstruct) {
-            brshDeclarePassBlock(self.rndExecuteGrey, qupmntSame, omitLtncy);
+        for (vidAdequateCropBlock dcidAgainstPush in bellNstruct) {
+            dcidAgainstPush(self.rndExecuteGrey, qupmntSame, omitLtncy);
         }
         if (self.rndExecuteGrey.brshDeclarePassBlock) {
             self.rndExecuteGrey.brshDeclarePassBlock(self.rndExecuteGrey, qupmntSame, YES);

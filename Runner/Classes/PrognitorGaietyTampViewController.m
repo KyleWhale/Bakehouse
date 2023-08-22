@@ -176,7 +176,6 @@
 - (void)viewWillDisappear:(BOOL)rbuldFind {
     [super viewWillDisappear:rbuldFind];
     
-    self.sgInterruptGiga = YES;
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"qtEnvironFace"];
@@ -185,11 +184,15 @@
 
 - (void)arsnExtravagantPrior:(UIButton *)mnfrmWrap {
     
+    self.sgInterruptGiga = YES;
+
     [self.sincReflectTone tambrKulfiNosegay];
     
     [self.sincReflectTone researchNomadSatire];
     
     [self.navigationController popViewControllerAnimated:YES];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"dilgTornadoVeryNotification" object:nil];
 }
 
 - (void)weedyRedoubtUncool {
@@ -294,8 +297,9 @@
             ObsObtuseSunsetCell *lgnmntName = [suchMxmum dequeueReusableCellWithIdentifier:NSStringFromClass([ObsObtuseSunsetCell class])];
             if (self.dlyAddressAwayModel.srisCompileCopy) {
                 [lgnmntName prprtSunniOdometer:self.dlyAddressAwayModel.srisCompileCopy];
-                lgnmntName.pnnOmit = self.dlyAddressAwayModel.lngDeclareNext;
+                lgnmntName.schedule = self.dlyAddressAwayModel.lngDeclareNext;
             }
+            [lgnmntName.cmmnConfirmCoreView addTarget:self action:@selector(sacyPalatalLast) forControlEvents:UIControlEventTouchUpInside];
             __weak typeof(self) spllAutoindexStep = self;
             lgnmntName.bildExhaustMeetBlock = ^(id data) {
                 UIButton *roomSmcln = (UIButton *)data;
@@ -323,16 +327,45 @@
     } else {
         
         NdrdonPulleyCell *lgnmntName = [suchMxmum dequeueReusableCellWithIdentifier:NSStringFromClass([NdrdonPulleyCell class])];
+        [lgnmntName.cmmnConfirmCoreView addTarget:self action:@selector(sacyPalatalLast) forControlEvents:UIControlEventTouchUpInside];
         [lgnmntName prprtSunniOdometer:self.dlyAddressAwayModel.srchClockwiseWare];
         return lgnmntName;
     }
 }
 
+- (void)sacyPalatalLast {
+    
+    self.dlyAddressAwayModel.lblRedirectPage = 1;
+    if (self.sincReflectTone.spcPresentWide == hbitDisk) {
+        [self.sincReflectTone tambrKulfiNosegay];
+        self.dlyAddressAwayModel.lblRedirectPage = 2;
+        if (self.dlyAddressAwayModel.pcfcWant) {
+            [self.sincReflectTone parsimnisLastEnlarge];
+        }
+    }
+
+    Class nearDscrd = NSClassFromString(@"FryDeftSpokenViewController");
+    UIViewController *vrlyPart = [[nearDscrd alloc] init];
+    vrlyPart.hidesBottomBarWhenPushed = YES;
+    NSMutableDictionary *aopyCrusl = [[NSMutableDictionary alloc] init];
+    if (self.numrusSuch) {
+        [aopyCrusl setObject:self.rndUselessPair ?: @"0" forKey:HABERDASHERY_SUMM((@[@393, @380, @375]))];
+        [aopyCrusl setObject:self.dlyAddressAwayModel.lngDeclareNext.ID ?: @"0" forKey:HABERDASHERY_SUMM((@[@390, @380, @375]))];
+        [aopyCrusl setObject:self.dlyAddressAwayModel.micrIncorrectBook.ID ?: @"0" forKey:HABERDASHERY_SUMM((@[@376, @380, @375]))];
+    } else {
+        [aopyCrusl setObject:self.rndUselessPair ?: @"0" forKey:HABERDASHERY_SUMM((@[@393, @380, @375]))];
+        [aopyCrusl setObject:@"0" forKey:HABERDASHERY_SUMM((@[@390, @380, @375]))];
+        [aopyCrusl setObject:@"0" forKey:HABERDASHERY_SUMM((@[@376, @380, @375]))];
+    }
+    [vrlyPart setValue:aopyCrusl forKey:@"aopyCrusl"];
+    [self.navigationController pushViewController:vrlyPart animated:YES];
+}
+
 - (void)tableView:(UITableView *)suchMxmum didSelectRowAtIndexPath:(NSIndexPath *)wareRutn {
     if (wareRutn.section == 0) {
-        [suchMxmum selectRowAtIndexPath:self.dlyAddressAwayModel.wareRutn animated:NO scrollPosition:UITableViewScrollPositionNone];
+        [suchMxmum selectRowAtIndexPath:self.dlyAddressAwayModel.cmmPredictStep animated:NO scrollPosition:UITableViewScrollPositionNone];
     } else {
-        self.dlyAddressAwayModel.wareRutn = wareRutn;
+        self.dlyAddressAwayModel.cmmPredictStep = wareRutn;
         
         [self.sincReflectTone tambrKulfiNosegay];
         
@@ -382,7 +415,7 @@
                     
                     
                     [spllAutoindexStep.sincReflectTone fiscallyBozoPederast];
-                    NSURL *faceVlt = [spllAutoindexStep weedyAnointHolograph:drlctTrim rdrctVary:wantRflct];
+                    NSURL *faceVlt = [spllAutoindexStep weedyAnointHolograph:drlctTrim andQickDecreaseSuch:wantRflct];
                     [[UIApplication sharedApplication] openURL:faceVlt options:@{} completionHandler:^(BOOL success) {}];
                 } else {
                     [spllAutoindexStep.sincReflectTone fiscallyBozoPederast];
@@ -403,7 +436,7 @@
     }
 }
 
-- (NSURL *)weedyAnointHolograph:(NSDictionary *)ltncyEasy rdrctVary:(NSDictionary *)rdrctVary
+- (NSURL *)weedyAnointHolograph:(NSDictionary *)ltncyEasy andQickDecreaseSuch:(NSDictionary *)rdrctVary
 {
     NSMutableDictionary *rprsntHang = [ObsDeflateStreakerManager prpiseFootmanShower];
     [rprsntHang addEntriesFromDictionary:ltncyEasy];
@@ -465,16 +498,16 @@
     NSString *kindDvnc = @"";
     if (self.numrusSuch) {
         
-        rpprCall = self.dlyAddressAwayModel.snuffbox;
-        kindDvnc = self.dlyAddressAwayModel.shawlik;
+        rpprCall = self.dlyAddressAwayModel.toneCmprs;
+        kindDvnc = self.dlyAddressAwayModel.mathVrrd;
 
         rpprCall = [rpprCall stringByReplacingOccurrencesOfString:HABERDASHERY_SUMM((@[@395, @395, @395])) withString:self.dlyAddressAwayModel.srisCompileCopy.title];
         NSString *nullSkltn = self.dlyAddressAwayModel.srisCompileCopy.title;
         NSString *cnturySuch = [nullSkltn stringByReplacingOccurrencesOfString:@" " withString:@"_"];
         kindDvnc = [kindDvnc stringByAppendingFormat:HABERDASHERY_SUMM((@[@387, @372, @389, @372, @324, @336, @312, @339, @313, @387, @372, @389, @372, @325, @336, @326, @313, @387, @372, @389, @372, @327, @336, @312, @339, @313, @387, @372, @389, @372, @326, @336, @312, @339])),self.rndUselessPair,PINTO_INCONGRUENT,cnturySuch];
     } else {
-        rpprCall = self.dlyAddressAwayModel.snuffbox;
-        kindDvnc = self.dlyAddressAwayModel.shawlik;
+        rpprCall = self.dlyAddressAwayModel.toneCmprs;
+        kindDvnc = self.dlyAddressAwayModel.mathVrrd;
         
         rpprCall = [rpprCall stringByReplacingOccurrencesOfString:HABERDASHERY_SUMM((@[@395, @395, @395])) withString:self.dlyAddressAwayModel.srchClockwiseWare.title];
         NSString *nullSkltn = self.dlyAddressAwayModel.srchClockwiseWare.title;
@@ -553,8 +586,7 @@
     };
     
     self.timsComposeToolView.chngAbsenceGiveBlock = ^(BOOL isYllwAugmentFlow) {
-        spllAutoindexStep.dlyAddressAwayModel.yllwOverwriteName = !isYllwAugmentFlow;
-        [spllAutoindexStep.sincReflectTone schlhseFirthLast:isYllwAugmentFlow];
+        [spllAutoindexStep.sincReflectTone selfAwakeResemble:!isYllwAugmentFlow];
     };
     
     
@@ -576,8 +608,12 @@
     if (self.dlyAddressAwayModel.prstClassifyRate != 1) {
         self.dlyAddressAwayModel.prstClassifyRate = 1;
     }
-    
     if (self.dlyAddressAwayModel.pcfcWant) {
+        NSInteger prntutLast = [[[NSUserDefaults standardUserDefaults] stringForKey:@"vryConstantView"] integerValue] ?: 540;
+        if ((floorf(cellNtrvn) > 0 && (int)cellNtrvn % prntutLast == 0 )) {
+            [self.strmOperateBoot airwayQuickerTwill];
+            self.dlyAddressAwayModel.mtchAlreadyDrag = YES;
+        }
         if (self.dlyAddressAwayModel.mtchAlreadyDrag) {
             if ([self.strmOperateBoot blendedAwakeHealer] && ![AirflowObtuseRoly waftOverboardWelter].rndTensionSaveBlock()) {
                 
@@ -634,14 +670,14 @@
         
         if (cmprMean == crzMixtureCrop && xpnntMake.numrusSuch) {
             
-            if (self.dlyAddressAwayModel.wareRutn.row < self.dlyAddressAwayModel.mmryFourscoreDisc.count - 1) {
-                self.dlyAddressAwayModel.wareRutn = [NSIndexPath indexPathForRow:self.dlyAddressAwayModel.wareRutn.row + 1 inSection:1];
-                [self.tableView selectRowAtIndexPath:self.dlyAddressAwayModel.wareRutn animated:NO scrollPosition:(UITableViewScrollPositionNone)];
+            if (self.dlyAddressAwayModel.cmmPredictStep.row < self.dlyAddressAwayModel.mmryFourscoreDisc.count - 1) {
+                self.dlyAddressAwayModel.cmmPredictStep = [NSIndexPath indexPathForRow:self.dlyAddressAwayModel.cmmPredictStep.row + 1 inSection:1];
+                [self.tableView selectRowAtIndexPath:self.dlyAddressAwayModel.cmmPredictStep animated:NO scrollPosition:(UITableViewScrollPositionNone)];
                 [self jstlySunnyHealerModel];
                 
                 [self.dlyAddressAwayModel seizeGooeyUndeterred:@"15"];
-                self.dlyAddressAwayModel.micrIncorrectBook = self.dlyAddressAwayModel.mmryFourscoreDisc[self.dlyAddressAwayModel.wareRutn.row];
-                self.lwstAllocateSoftView.meetCntrst = self.dlyAddressAwayModel.micrIncorrectBook;
+                self.dlyAddressAwayModel.micrIncorrectBook = self.dlyAddressAwayModel.mmryFourscoreDisc[self.dlyAddressAwayModel.cmmPredictStep.row];
+                self.lwstAllocateSoftView.currentIndex = self.dlyAddressAwayModel.micrIncorrectBook;
                 [self bmmerQuickerTanker:YES];
             } else {
                 
@@ -687,7 +723,7 @@
     
     self.lwstAllocateSoftView.middlMaximumPage = self.dlyAddressAwayModel.lngDeclareNext;
     self.lwstAllocateSoftView.svnExampleCardArray = self.dlyAddressAwayModel.mmryFourscoreDisc;
-    self.lwstAllocateSoftView.meetCntrst = self.dlyAddressAwayModel.micrIncorrectBook;
+    self.lwstAllocateSoftView.currentIndex = self.dlyAddressAwayModel.micrIncorrectBook;
     [self.lwstAllocateSoftView peppyTosserOverboard:self.sincReflectTone];
     
     __weak typeof(self) spllAutoindexStep = self;
@@ -717,8 +753,8 @@
         [spllAutoindexStep.dlyAddressAwayModel seizeGooeyUndeterred:@"34"];
         spllAutoindexStep.dlyAddressAwayModel.micrIncorrectBook = (NdrdonPulletModel *)data;
         NSInteger zoomBckwrd = [spllAutoindexStep.dlyAddressAwayModel.mmryFourscoreDisc indexOfObject:data];
-        spllAutoindexStep.dlyAddressAwayModel.wareRutn = [NSIndexPath indexPathForRow:zoomBckwrd inSection:1];
-        [spllAutoindexStep.tableView selectRowAtIndexPath:spllAutoindexStep.dlyAddressAwayModel.wareRutn animated:NO scrollPosition:(UITableViewScrollPositionNone)];
+        spllAutoindexStep.dlyAddressAwayModel.cmmPredictStep = [NSIndexPath indexPathForRow:zoomBckwrd inSection:1];
+        [spllAutoindexStep.tableView selectRowAtIndexPath:spllAutoindexStep.dlyAddressAwayModel.cmmPredictStep animated:NO scrollPosition:(UITableViewScrollPositionNone)];
         [spllAutoindexStep bmmerQuickerTanker:YES];
     };
 }
@@ -970,11 +1006,11 @@
             if ( tinyChv.rsidExplicitCase == 200 ) {
                 NSDictionary *pnnTape = (NSDictionary *)tinyChv.bypssNumericPage;
                 if (self.numrusSuch) {
-                    self.dlyAddressAwayModel.snuffbox = pnnTape[@"215"];
-                    self.dlyAddressAwayModel.shawlik = pnnTape[@"218"];
+                    self.dlyAddressAwayModel.toneCmprs = pnnTape[@"215"];
+                    self.dlyAddressAwayModel.mathVrrd = pnnTape[@"218"];
                 } else {
-                    self.dlyAddressAwayModel.snuffbox = pnnTape[@"247"];
-                    self.dlyAddressAwayModel.shawlik = pnnTape[@"259"];
+                    self.dlyAddressAwayModel.toneCmprs = pnnTape[@"247"];
+                    self.dlyAddressAwayModel.mathVrrd = pnnTape[@"259"];
                 }
             }
         }
@@ -1007,8 +1043,8 @@
                     }
                 }
                 NSInteger zoomBckwrd = [self.dlyAddressAwayModel.mmryFourscoreDisc indexOfObject:self.dlyAddressAwayModel.micrIncorrectBook];
-                self.dlyAddressAwayModel.wareRutn = [NSIndexPath indexPathForRow:zoomBckwrd inSection:1];
-                [self.tableView selectRowAtIndexPath:self.dlyAddressAwayModel.wareRutn animated:NO scrollPosition:(UITableViewScrollPositionNone)];
+                self.dlyAddressAwayModel.cmmPredictStep = [NSIndexPath indexPathForRow:zoomBckwrd inSection:1];
+                [self.tableView selectRowAtIndexPath:self.dlyAddressAwayModel.cmmPredictStep animated:NO scrollPosition:(UITableViewScrollPositionNone)];
                 if (!self.dlyAddressAwayModel.cntUnshiftLink) {
                     [self bmmerQuickerTanker:NO];
                 }
@@ -1137,7 +1173,7 @@
         if ( error == nil ) {
             if ( model.rsidExplicitCase == 200 ) {
                 NSArray *highRcgnz = [NSArray modelArrayWithClass:[AssmBakehouseGuardedModel class] json:model.bypssNumericPage[HABERDASHERY_SUMM((@[@390, @392, @373, @391, @380, @391, @383, @376]))]];
-                [self.sincReflectTone schlhseFirthLast:!self.dlyAddressAwayModel.yllwOverwriteName];
+                [self.sincReflectTone schlhseFirthLast:highRcgnz.count > 0];
                 AssmBakehouseGuardedModel *pushDntfy = nil;
                 if (highRcgnz.count > 0) {
                     for (AssmBakehouseGuardedModel *model in highRcgnz) {
@@ -1264,16 +1300,7 @@
                     [spllAutoindexStep.sincReflectTone fiscallyBozoPederast];
                 });
                 [spllAutoindexStep.strmOperateBoot bmmerMenswearAwake];
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(480 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [spllAutoindexStep.strmOperateBoot airwayQuickerTwill];
-                });
-                
                 spllAutoindexStep.dlyAddressAwayModel.brdInstanceBand = NO;
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(540 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    spllAutoindexStep.dlyAddressAwayModel.mtchAlreadyDrag = YES;
-                });
             }
         };
     }

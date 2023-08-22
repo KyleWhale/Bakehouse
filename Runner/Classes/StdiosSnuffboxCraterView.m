@@ -47,7 +47,7 @@
     [self.ccptPurchaseBootBtn setPosition:1 interval:8];
 }
 
-- (void)setChicReplacePart:(NSArray *)dsplySide {
+- (void)setTextArray:(NSArray *)dsplySide {
     
     _chicReplacePart = dsplySide;
     [self.rmvVariantDiscView reloadData];

@@ -43,9 +43,9 @@
     self.bckpAnalystBellView.middlMaximumPage = flagVrus;
 }
 
-- (void)setMeetCntrst:(NdrdonPulletModel *)meetCntrst {
-    _meetCntrst = meetCntrst;
-    self.bckpAnalystBellView.meetCntrst = meetCntrst;
+- (void)setCurrentIndex:(NdrdonPulletModel *)meetCntrst {
+    _currentIndex = meetCntrst;
+    self.bckpAnalystBellView.currentIndex = meetCntrst;
 }
 
 - (void)setSlshReinstateNameBlock:(bypssSecondaryPlusBlock)rootCntnt {

@@ -32,19 +32,42 @@
     
     self.fficEnvironAwayLab = [GophrAitchPimpleManager blndProvableShower];
     [self addSubview:self.fficEnvironAwayLab];
+    [self.fficEnvironAwayLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(50);
+        make.top.mas_equalTo(54);
+    }];
     
     self.nlikIncreaseList = [GophrAitchPimpleManager gadgetAttendanceBozo];
     [self addSubview:self.nlikIncreaseList];
+    [self.nlikIncreaseList mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.fficEnvironAwayLab.mas_bottom).offset(4);
+        make.left.mas_equalTo(50);
+        make.right.mas_equalTo(0);
+        make.height.mas_equalTo(1);
+    }];
     
     self.lwstSessionLose = [GophrAitchPimpleManager jstleOleanderLast];
     [self addSubview:self.lwstSessionLose];
+    [self.lwstSessionLose mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(-80);
+        make.centerY.equalTo(self.fficEnvironAwayLab);
+        make.size.mas_equalTo(CGSizeMake(42, 20));
+    }];
     
     self.prfixInterfereCareBtn = [GophrAitchPimpleManager affixSunniGroundsman];
     [self addSubview:self.prfixInterfereCareBtn];
+    [self.prfixInterfereCareBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(50);
+        make.top.equalTo(self.nlikIncreaseList.mas_bottom).offset(30);
+    }];
     
     self.ppndRecommendFallBtn = [GophrAitchPimpleManager peratinQuickenShower];
     [self addSubview:self.ppndRecommendFallBtn];
-    
+    [self.ppndRecommendFallBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(50);
+        make.top.equalTo(self.prfixInterfereCareBtn.mas_bottom).offset(24);
+    }];
+
     [self.lwstSessionLose addTarget:self action:@selector(baneflNosegayTanker:) forControlEvents:UIControlEventValueChanged];
     [self.prfixInterfereCareBtn addTarget:self action:@selector(kindChangeoverRemedy) forControlEvents:UIControlEventTouchUpInside];
     [self.ppndRecommendFallBtn addTarget:self action:@selector(saintDipoleKerosene) forControlEvents:UIControlEventTouchUpInside];
@@ -67,16 +90,6 @@
     if ( self.wrldCurrentMachBlock ) {
         self.wrldCurrentMachBlock();
     }
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    self.fficEnvironAwayLab.frame = CGRectMake(50, 54, 80, 21);
-    self.nlikIncreaseList.frame = CGRectMake(50, CGRectGetMaxY(self.fficEnvironAwayLab.frame)+4, CGRectGetWidth(self.bounds)-50, 1);
-    self.lwstSessionLose.frame = CGRectMake(CGRectGetWidth(self.bounds)-38-42, CGRectGetMidY(self.fficEnvironAwayLab.frame)-10, 42, 20);
-    self.prfixInterfereCareBtn.frame = CGRectMake(50, CGRectGetMaxY(self.nlikIncreaseList.frame) + 30, 280, 30);
-    self.ppndRecommendFallBtn.frame = CGRectMake(50, CGRectGetMaxY(self.prfixInterfereCareBtn.frame) + 24, 280, 30);
 }
 
 @end

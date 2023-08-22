@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AirflowAsciiTraumaModel : NSObject
 
 @property (nonatomic, assign) BOOL littlCommentCell;
-@property (nonatomic, assign) BOOL yllwOverwriteName;
 @property (nonatomic, strong) NSString *rndUselessPair;
 @property (nonatomic, strong) NSString *source;
 @property (nonatomic, assign) BOOL numrusSuch;
@@ -35,9 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGRect  grnContentWish;
 @property (nonatomic, strong) NSArray *chicReplacePart;
 @property (nonatomic, strong) NSString *varyRrrng;
-@property (nonatomic, strong) NSIndexPath *wareRutn;
-@property (nonatomic, strong) NSString *snuffbox;
-@property (nonatomic, strong) NSString *shawlik;
+@property (nonatomic, strong) NSIndexPath *cmmPredictStep;
+@property (nonatomic, strong) NSString *toneCmprs;
+@property (nonatomic, strong) NSString *mathVrrd;
 @property (nullable, nonatomic, strong) NSDate *startTime;
 @property (nonatomic, assign) NSInteger prstClassifyRate;
 @property (nonatomic, assign) CGFloat total;
@@ -53,8 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL packSssn;
 @property (nonatomic, copy) NSString *likeUnknwn;
 @property (nonatomic, assign) NSInteger dsignAlthoughView;
-
-
 
 - (void)brtallyNovemberSunni;
 

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) dcidAdequateTimeBlock     pintTreeBlock;
 @property (nonatomic, copy) bypssSecondaryPlusBlock       syntxRecursiveLoseBlock;
 
-- (void)setChicReplacePart:(NSArray *)dsplySide;
+- (void)setTextArray:(NSArray *)dsplySide;
 @end
 
 NS_ASSUME_NONNULL_END

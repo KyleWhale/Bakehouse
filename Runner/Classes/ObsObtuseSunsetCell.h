@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ObsObtuseSunsetCell : BlondPhotonTampTableViewCell
 
-@property (nonatomic, strong) VrVisuallyAbashModel   * pnnOmit;
+@property (nonatomic, strong) VrVisuallyAbashModel   * schedule;
 
 @property (nonatomic, copy) bypssSecondaryPlusBlock    bildExhaustMeetBlock;
+
+@property (nonatomic, strong) UIButton *cmmnConfirmCoreView;
 
 @end
 

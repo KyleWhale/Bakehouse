@@ -33,7 +33,7 @@
 @property (nonatomic, strong) UIButton *rcrdDependentLossBtn;
 @property (nonatomic, strong) UIButton *mthdUpgradeAlsoBtn;
 @property (nonatomic, strong) UIButton *chngCorruptTakeBtn;
-@property (nonatomic, strong) AVPlayerItem *nclsMean;
+@property (nonatomic, strong) AVPlayerItem *currentItem;
 @property (nonatomic, strong) UIActivityIndicatorView *loadingView;
 @property (nonatomic, strong) NSTimer *mdimMeet;
 @property (nonatomic ,strong) id nsfCertainMono;
@@ -144,7 +144,8 @@ static void *bildAccidentDesk = &bildAccidentDesk;
     [self.nlssBackspaceWareView.lngthEnhanceTool addTarget:self action:@selector(prprtSisalDepart:) forControlEvents:UIControlEventValueChanged];
     
     [self.nlssBackspaceWareView.lngthEnhanceTool addTarget:self action:@selector(selfTrendsetterGooeyData:) forControlEvents:UIControlEventTouchUpInside];
-    
+    [self.nlssBackspaceWareView.lngthEnhanceTool addTarget:self action:@selector(selfTrendsetterGooeyData:) forControlEvents:UIControlEventTouchUpOutside];
+
     
     self.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     [self.contentView addSubview:self.loadingView];
@@ -260,9 +261,13 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 - (void)schlhseFirthLast:(BOOL)packSssn {
     _packSssn = packSssn;
     self.thrWithoutTapeBtn.hidden = !packSssn;
-    self.crssCorruptPortView.hidden = !packSssn;
     [self tfitterTesterSisal:packSssn];
 }
+
+- (void)selfAwakeResemble:(BOOL)ccdntSort {
+    self.crssCorruptPortView.hidden = ccdntSort;
+}
+
 - (void)tfitterTesterSisal:(BOOL)packSssn {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (packSssn) {
@@ -282,19 +287,19 @@ static void *bildAccidentDesk = &bildAccidentDesk;
     
     [self.sincNavigatePart pause];
     
-    if ( _nclsMean ) {
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:_nclsMean];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@390, @391, @372, @391, @392, @390]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387]))];
-        [_nclsMean cancelPendingSeeks];
-        [_nclsMean.asset cancelLoading];
-        _nclsMean = nil;
+    if ( _currentItem ) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:_currentItem];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@390, @391, @372, @391, @392, @390]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387]))];
+        [_currentItem cancelPendingSeeks];
+        [_currentItem.asset cancelLoading];
+        _currentItem = nil;
     }
     
     self.mcrThereforeNoteView.shiftFamiliarTest = NO;
-    self.nclsMean = nil;
+    self.currentItem = nil;
     self.mcrThereforeNoteView.lctOverrideCrop = 0;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -461,8 +466,8 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 
 - (void)prprtSisalDepart:(UISlider *)sttmntKilo {
     self.mcrThereforeNoteView.strngSentinelEasy = YES;
-    
     [self menschFootmanRemedy];
+    self.nlssBackspaceWareView.limitDisplayCordLabel.text = [self.mcrThereforeNoteView selfDoorSunni:sttmntKilo.value];
 }
 
 - (void)selfTrendsetterGooeyData:(UISlider *)sttmntKilo {
@@ -521,47 +526,47 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 }
 
 
--(void)setNclsMean:(AVPlayerItem *)nclsMean {
-    if ( _nclsMean == nclsMean ) {
+-(void)setCurrentItem:(AVPlayerItem *)nclsMean {
+    if ( _currentItem == nclsMean ) {
         return;
     }
     
-    if ( _nclsMean ) {
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:_nclsMean];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@390, @391, @372, @391, @392, @390]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396]))];
-        [_nclsMean removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387]))];
-        [_nclsMean cancelPendingSeeks];
-        [_nclsMean.asset cancelLoading];
-        _nclsMean = nil;
+    if ( _currentItem ) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:_currentItem];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@390, @391, @372, @391, @392, @390]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396]))];
+        [_currentItem removeObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387]))];
+        [_currentItem cancelPendingSeeks];
+        [_currentItem.asset cancelLoading];
+        _currentItem = nil;
     }
     
-    _nclsMean = nclsMean;
+    _currentItem = nclsMean;
     
-    if ( _nclsMean ) {
-        [_nclsMean addObserver:self
+    if ( _currentItem ) {
+        [_currentItem addObserver:self
                            forKeyPath:HABERDASHERY_SUMM((@[@390, @391, @372, @391, @392, @390]))
                               options:NSKeyValueObservingOptionNew
                               context:bildAccidentDesk];
         
-        [_nclsMean addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390])) options:NSKeyValueObservingOptionNew context:bildAccidentDesk];
+        [_currentItem addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@383, @386, @372, @375, @376, @375, @359, @380, @384, @376, @357, @372, @385, @378, @376, @390])) options:NSKeyValueObservingOptionNew context:bildAccidentDesk];
         
-        [_nclsMean addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396])) options: NSKeyValueObservingOptionNew context:bildAccidentDesk];
+        [_currentItem addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396])) options: NSKeyValueObservingOptionNew context:bildAccidentDesk];
         
-        [_nclsMean addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387])) options: NSKeyValueObservingOptionNew context:bildAccidentDesk];
+        [_currentItem addObserver:self forKeyPath:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387])) options: NSKeyValueObservingOptionNew context:bildAccidentDesk];
         
         
-        [self.sincNavigatePart replaceCurrentItemWithPlayerItem:_nclsMean];
+        [self.sincNavigatePart replaceCurrentItemWithPlayerItem:_currentItem];
         
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(perclatrGodownAwake:) name:AVPlayerItemDidPlayToEndTimeNotification object:_nclsMean];
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(perclatrGodownAwake:) name:AVPlayerItemDidPlayToEndTimeNotification object:_currentItem];
     }
 }
 
 - (void)menschSunniPrionView {
     
-    self.nclsMean = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.likeUnknwn]];
-    self.sincNavigatePart = [AVPlayer playerWithPlayerItem:_nclsMean];
+    self.currentItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.likeUnknwn]];
+    self.sincNavigatePart = [AVPlayer playerWithPlayerItem:_currentItem];
     self.sincNavigatePart.automaticallyWaitsToMinimizeStalling = NO;
     self.sincNavigatePart.volume = 1.0;
     
@@ -582,9 +587,9 @@ static void *bildAccidentDesk = &bildAccidentDesk;
     if ( self.mcrThereforeNoteView.shiftFamiliarTest ) {
         [self sacyOccupationGrope:vlIncludePath];
         
-        self.nclsMean = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:_likeUnknwn]];
+        self.currentItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:_likeUnknwn]];
         
-        [self.sincNavigatePart replaceCurrentItemWithPlayerItem:self.nclsMean];
+        [self.sincNavigatePart replaceCurrentItemWithPlayerItem:self.currentItem];
     }else{
         [self sacyOccupationGrope:vlidOrganiseThen];
         
@@ -698,9 +703,9 @@ static void *bildAccidentDesk = &bildAccidentDesk;
                 {
                     
                     [self sacyOccupationGrope:hbitDisk];
-                    if ( CMTimeGetSeconds(_nclsMean.duration) ) {
+                    if ( CMTimeGetSeconds(_currentItem.duration) ) {
                         
-                        CGFloat busyMult = CMTimeGetSeconds(_nclsMean.duration);
+                        CGFloat busyMult = CMTimeGetSeconds(_currentItem.duration);
                         if ( !isnan(busyMult) ) {
                             self.nlssBackspaceWareView.lngthEnhanceTool.maximumValue = busyMult;
                             self.tlntInterpretRead = busyMult;
@@ -749,7 +754,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
             
             
             NSTimeInterval mathPrt = [self favelaSpammMorn];
-            CMTime ugmntHold             = self.nclsMean.duration;
+            CMTime ugmntHold             = self.currentItem.duration;
             CGFloat mphszCome       = CMTimeGetSeconds(ugmntHold);
             
             
@@ -759,7 +764,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
             
         } else if ([weekXclusv isEqualToString:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @341, @392, @377, @377, @376, @389, @344, @384, @387, @391, @396]))]) {
             
-            if (self.nclsMean.playbackBufferEmpty) {
+            if (self.currentItem.playbackBufferEmpty) {
                 [self.loadingView startAnimating];
                 [self sacyOccupationGrope:vlIncludePath];
                 self.cmmnMidnightHomeNum ++;
@@ -771,7 +776,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
         } else if ([weekXclusv isEqualToString:HABERDASHERY_SUMM((@[@387, @383, @372, @396, @373, @372, @374, @382, @351, @380, @382, @376, @383, @396, @359, @386, @350, @376, @376, @387, @360, @387]))]) {
             
             
-            if (self.nclsMean.playbackLikelyToKeepUp && self.spcPresentWide == vlIncludePath)
+            if (self.currentItem.playbackLikelyToKeepUp && self.spcPresentWide == vlIncludePath)
             {
                 [self.loadingView stopAnimating];
                 if ( self.nlssBackspaceWareView.ignrTranslateWorkBtn.isSelected ) {
@@ -792,7 +797,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 
 
 - (NSTimeInterval)favelaSpammMorn {
-    NSArray *numrusFall = [_nclsMean loadedTimeRanges];
+    NSArray *numrusFall = [_currentItem loadedTimeRanges];
     CMTimeRange viceCntct     = [numrusFall.firstObject CMTimeRangeValue];
     float timeFrgmnt        = CMTimeGetSeconds(viceCntct.start);
     float roomTtrbut     = CMTimeGetSeconds(viceCntct.duration);
@@ -813,7 +818,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 
 - (void)saintThriveOdometer {
     
-    if ( _nclsMean == nil ) {
+    if ( _currentItem == nil ) {
         return;
     }
     NSInteger nextGrphc = [[[NSUserDefaults standardUserDefaults] objectForKey:@"slManifestSign"] integerValue] ?: 5;
@@ -842,7 +847,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
     
     float ugmntCost = [self.nlssBackspaceWareView.lngthEnhanceTool minimumValue];
     float pageNclud = [self.nlssBackspaceWareView.lngthEnhanceTool maximumValue];
-    float areaVrvw = CMTimeGetSeconds(_nclsMean.currentTime);
+    float areaVrvw = CMTimeGetSeconds(_currentItem.currentTime);
     if (!self.crssCorruptPortView.isHidden) {
         [self.crssCorruptPortView kraalTwillUncool:areaVrvw offset:self.timeOffset];
     }
@@ -875,7 +880,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
         
         __weak typeof(self) spllAutoindexStep = self;
         
-        CMTime kybrdPlus = CMTimeMakeWithSeconds(rtrvSend, _nclsMean.currentTime.timescale);
+        CMTime kybrdPlus = CMTimeMakeWithSeconds(rtrvSend, _currentItem.currentTime.timescale);
         [self.sincNavigatePart seekToTime:kybrdPlus toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
             if (finished) {
                 spllAutoindexStep.mcrThereforeNoteView.lctOverrideCrop = 0;
@@ -891,7 +896,7 @@ static void *bildAccidentDesk = &bildAccidentDesk;
 }
 
 - (CMTime)jstlyHolographLanky{
-    AVPlayerItem *nclsMean = _nclsMean;
+    AVPlayerItem *nclsMean = _currentItem;
     if (nclsMean.status == AVPlayerItemStatusReadyToPlay){
         return([nclsMean duration]);
     }

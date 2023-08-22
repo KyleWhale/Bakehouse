@@ -1,5 +1,6 @@
 
 #import <Foundation/Foundation.h>
+#import "NionSpyglassShawl.h"
 
 @class BasqDeflateBallet;
 

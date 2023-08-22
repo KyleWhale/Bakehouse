@@ -60,8 +60,8 @@
     [self.rsmInquiryFallBtn setPosition:3 interval:2];
 }
 
-- (void)setMeetCntrst:(NdrdonPulletModel *)meetCntrst {
-    _meetCntrst = meetCntrst;
+- (void)setCurrentIndex:(NdrdonPulletModel *)meetCntrst {
+    _currentIndex = meetCntrst;
     NSInteger zoomBckwrd = [meetCntrst.dltSpecificBoth integerValue] - 1;
     [self.ssignWithoutFreeView selectItemAtIndexPath:[NSIndexPath indexPathForRow:zoomBckwrd inSection:0] animated:NO scrollPosition:(UICollectionViewScrollPositionNone)];
 }

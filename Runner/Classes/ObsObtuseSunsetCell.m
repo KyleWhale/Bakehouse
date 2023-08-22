@@ -49,6 +49,15 @@
         make.height.equalTo(@18);
     }];
     
+    self.cmmnConfirmCoreView = [[UIButton alloc] init];
+    [self.cmmnConfirmCoreView setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:100] forState:UIControlStateNormal placeholder:nil];
+    [self.contentView addSubview:self.cmmnConfirmCoreView];
+    [self.cmmnConfirmCoreView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.vilClassifyKnowView);
+        make.right.mas_equalTo(-14);
+        make.size.mas_equalTo(22);
+    }];
+
     self.ccptInvalidCordLabel = [GophrAitchPimpleManager blndDesertionOxidize];
     [self.contentView addSubview:self.ccptInvalidCordLabel];
     [self.ccptInvalidCordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -126,8 +135,8 @@
     [self layoutIfNeeded];
 }
 
-- (void)setPnnOmit:(VrVisuallyAbashModel *)pnnOmit {
-    _pnnOmit = pnnOmit;
+- (void)setSchedule:(VrVisuallyAbashModel *)pnnOmit {
+    _schedule = pnnOmit;
     
     [self.rsmInquiryFallBtn setTitle:pnnOmit.title forState:UIControlStateNormal];
     [self.rsmInquiryFallBtn setPosition:3 interval:2];

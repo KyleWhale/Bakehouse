@@ -6,6 +6,7 @@
 
 
 #import "VrWilcoSkewedCell.h"
+#import "NionSpyglassShawl.h"
 
 @interface VrWilcoSkewedCell ()
 

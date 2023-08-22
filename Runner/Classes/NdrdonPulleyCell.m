@@ -50,6 +50,15 @@
         make.height.equalTo(@18);
     }];
     
+    self.cmmnConfirmCoreView = [[UIButton alloc] init];
+    [self.cmmnConfirmCoreView setImageWithURL:[LayttSpyglassPluckFunction barefacedGoitreNomad:100] forState:UIControlStateNormal placeholder:nil];
+    [self.contentView addSubview:self.cmmnConfirmCoreView];
+    [self.cmmnConfirmCoreView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.vilClassifyKnowView);
+        make.right.mas_equalTo(-14);
+        make.size.mas_equalTo(22);
+    }];
+    
     self.ccptInvalidCordLabel = [GophrAitchPimpleManager blndCrinolineFootman];
     [self.contentView addSubview:self.ccptInvalidCordLabel];
     [self.ccptInvalidCordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +67,7 @@
         make.height.equalTo(@18);
         make.width.greaterThanOrEqualTo(@18);
     }];
-    
+        
     self.mnthClockwiseYearLabel = [GophrAitchPimpleManager graffitiViandScabies];
     [self.contentView addSubview:self.mnthClockwiseYearLabel];
     [self.mnthClockwiseYearLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) VrVisuallyAbashModel         * middlMaximumPage;
 
-@property (nonatomic, strong) NdrdonPulletModel            * meetCntrst;
+@property (nonatomic, strong) NdrdonPulletModel            * currentIndex;
 @property (nonatomic, strong) NSArray                       * svnExampleCardArray;
 
 @property (nonatomic, copy) bypssSecondaryPlusBlock     slshReinstateNameBlock;

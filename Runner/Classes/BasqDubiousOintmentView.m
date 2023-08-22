@@ -120,7 +120,7 @@
         if ( self.stckInterpretCareBlock ) {
             self.stckInterpretCareBlock(@(self.timeOffset));
         }
-        NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@320, @312, @321, @324, @377, @390])),-self.timeOffset];
+        NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@320, @312, @321, @324, @377, @390])), -self.timeOffset];
         [MBProgressHUD racsBeltTercentenary:gigaKybrd];
     }
 }
@@ -130,7 +130,7 @@
         self.stckInterpretCareBlock(@-0.5);
     }
     self.timeOffset = self.timeOffset - 0.5;
-    NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@320, @323, @321, @328, @390, @367, @385, @312, @321, @324, @377, @390])),self.timeOffset];
+    NSString *gigaKybrd = [NSString stringWithFormat:@"%@\n%.1fs", HABERDASHERY_SUMM((@[@320, @323, @321, @328, @390])), self.timeOffset];
     [MBProgressHUD racsBeltTercentenary:gigaKybrd];
 }
 
@@ -139,7 +139,7 @@
         self.stckInterpretCareBlock(@0.5);
     }
     self.timeOffset = self.timeOffset + 0.5;
-    NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@318, @323, @321, @328, @390, @367, @385, @312, @321, @324, @377, @390])),self.timeOffset];
+    NSString *gigaKybrd = [NSString stringWithFormat:@"%@\n%.1fs", HABERDASHERY_SUMM((@[@318, @323, @321, @328, @390])), self.timeOffset];
     [MBProgressHUD racsBeltTercentenary:gigaKybrd];
 }
 
@@ -150,7 +150,7 @@
         if ( self.stckInterpretCareBlock ) {
             self.stckInterpretCareBlock(@(self.timeOffset));
         }
-        NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@318, @312, @321, @324, @377, @390])),self.timeOffset];
+        NSString *gigaKybrd = [NSString stringWithFormat:HABERDASHERY_SUMM((@[@318, @312, @321, @324, @377, @390])), self.timeOffset];
         [MBProgressHUD racsBeltTercentenary:gigaKybrd];
     }
 }

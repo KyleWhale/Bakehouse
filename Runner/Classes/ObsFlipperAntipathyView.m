@@ -52,7 +52,7 @@
     
     self.bckpAnalystBellView.wrldCurrentMachBlock = ^{
         [spllAutoindexStep.sqrRefreshLongView addSubview:spllAutoindexStep.timsAccuracyIdeaView];
-        [spllAutoindexStep.timsAccuracyIdeaView setChicReplacePart:spllAutoindexStep.chicReplacePart];
+        [spllAutoindexStep.timsAccuracyIdeaView setTextArray:spllAutoindexStep.chicReplacePart];
         [spllAutoindexStep ecrQuickenUntouchedTool:spllAutoindexStep.timsAccuracyIdeaView animation:YES];
     };
     
